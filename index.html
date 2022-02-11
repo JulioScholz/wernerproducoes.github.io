@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werner Produções</title>
+    <meta name="description"
+        content="Here is example of Parallax Scrolling Video Tutorial. In this tutorial we will create awesoem look parallax scrolling effect with video. You can see working example and demo of parallax effect here. " />
+    <meta name="author" content="Codeconvey" />
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="parallax.css" />
+    <script>
+        //Get the button: mybutton=document.getElementById("myBtn"); // When the user scrolls down 20px from the top
+
+        window.onscroll = function () { scrollFunction() }; function scrollFunction() {
+            mybutton = document.getElementById("myBtn")
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao topo</button>
+
+    <div class="header">
+    </div>
+
+    <div id="navlist">
+        <b href="">
+            <img class='logo' alt="Werner Produções Logo" src="images/logo2.png">
+        </b>
+        <a href="javascript:void(0)">Contato</a>
+        <a href="javascript:void(0)">Projetos</a>
+        <a href="about.html">Sobre nós</a>
+        <a href="index.html">Inicio</a>
+    </div>
+
+
+    <div class="hero-wrapper" id="home">
+        <figure>
+            <video loop muted="muted" autoplay>
+                <source src="videos/wp.mp4" />
+            </video>
+        </figure>
+        <div class="caption">
+            <span class="border">Werner Produções</span>
+        </div>
+    </div>
+
+
+
+    <div class="stretch">
+        <div class="rt-container">
+            <br>
+            <br>
+
+            <section id="about"></section>
+            <p>
+                <span class="bigger">Werner Produções Ltda. </span>é uma produtora de conteúdo audiovisual. No ano de
+                2017 as
+                cineastas Téia Werner e Mirna Werner
+                a fundaram, com o intuito de produzir, contar e compartilhar histórias
+                de maneira criativa, com qualidade e solidez.
+            </p>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
