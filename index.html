@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werner Produções</title>
-    <meta name="description"
-        content="Here is example of Parallax Scrolling Video Tutorial. In this tutorial we will create awesoem look parallax scrolling effect with video. You can see working example and demo of parallax effect here. " />
-    <meta name="author" content="Codeconvey" />
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="parallax.css" />
-    <script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Werner Produções</title>
+        <meta name="description"
+            content="Here is example of Parallax Scrolling Video Tutorial. In
+            this tutorial we will create awesoem look parallax scrolling effect
+            with video. You can see working example and demo of parallax effect
+            here." />
+        <meta name="author" content="Codeconvey" />
+        <!--Only for demo purpose - no need to add.-->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="parallax.css" />
+        <link rel="stylesheet" href="about.css">
+        <script>
         //Get the button: mybutton=document.getElementById("myBtn"); // When the user scrolls down 20px from the top
 
         window.onscroll = function () { scrollFunction() }; function scrollFunction() {
@@ -29,60 +33,149 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }</script>
+    </head>
 
-</head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao
+            topo</button>
 
-<body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Voltar ao topo</button>
-
-    <div class="header">
-    </div>
-
-    <div id="navlist">
-        <b href="">
-            <img class='logo' alt="Werner Produções Logo" src="images/logo2.png">
-        </b>
-        <a href="javascript:void(0)">Contato</a>
-        <a href="javascript:void(0)">Projetos</a>
-        <a href="about.html">Sobre nós</a>
-        <a href="index.html">Inicio</a>
-    </div>
-
-
-    <div class="hero-wrapper" id="home">
-        <figure>
-            <video loop muted="muted" autoplay>
-                <source src="videos/wp.mp4" />
-            </video>
-        </figure>
-        <div class="caption">
-            <span class="border">Werner Produções</span>
+        <div class="header">
         </div>
-    </div>
 
-
-
-    <div class="stretch">
-        <div class="rt-container">
-            <br>
-            <br>
-
-            <section id="about"></section>
-            <p>
-                <span class="bigger">Werner Produções Ltda. </span>é uma produtora de conteúdo audiovisual. No ano de
-                2017 as
-                cineastas Téia Werner e Mirna Werner
-                a fundaram, com o intuito de produzir, contar e compartilhar histórias
-                de maneira criativa, com qualidade e solidez.
-            </p>
-
-
-
+        <div id="navlist">
+            <b href="">
+                <img class='logo' alt="Werner Produções Logo"
+                    src="images/logo2.png">
+            </b>
+            <a href="contato.html">Contato</a>
+            <a href="javascript:void(0)">Projetos</a>
+            <a href="about.html">Sobre nós</a>
+            <a href="index.html">Inicio</a>
         </div>
-    </div>
+
+
+        <div class="hero-wrapper" id="home">
+            <figure>
+                <video loop muted="muted" autoplay>
+                    <source src="videos/wp.mp4" />
+                </video>
+            </figure>
+            <div class="caption">
+                <span class="border">Werner Produções</span>
+            </div>
+        </div>
 
 
 
-</body>
+        <div class="stretch">
+            <div class="rt-container">
+
+                <section id="about"></section>
+                <p>
+                    <span class="bigger">Werner Produções Ltda. </span>
+                    <br>é uma produtora de conteúdo
+                    audiovisual, criada em 2017 pelas cineastas Téia Werner e
+                    Mirna
+                    Werner,
+                    com o objetivo de produzir e compartilhar histórias de
+                    maneira criativa, com qualidade e solidez.
+                </p>
+            </div>
+
+            <div class="wrapper" style="margin-top: 200px;">
+                <h1>Nosso time</h1>
+                <div class="our_team">
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/teia.jpg" alt="Teia Werner"
+                                class='logo'>
+                        </div>
+                        <h3>Teia Werner</h3>
+                        <span>Fundadora</span>
+                        <p>Sócia da Werner Produções. Produtora e diretora de
+                            audiovisual.
+                            Graduada em Design de Moda, Especialista em Cinema
+                            pela Unespar.
+                            Membro da academia de Cultura de Curitiba
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/mirna.jpg" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Mirna Werner</h3>
+                        <span>Fundadora</span>
+                        <p>Sócia da Werner Produções. Produtora de audiovisual,
+                            Arte
+                            Educadora.
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/marina.jpg" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Marina Werner</h3>
+                        <span>Figurinista</span>
+                        <p>Figurinista e assistente de produção da Werner
+                            Produções.
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/default.png" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Murilo Lazarin</h3>
+                        <span>Diretor de Fotografia</span>
+                        <p>Diretor de Fotografia e Arte Educador. Graduado em
+                            Cinema pela
+                            Unespar.
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/default.png" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Lucas Werner Fagundes</h3>
+                        <span>Produtor</span>
+                        <p>Roteirista, Produtor, Arte Educador. Técnico em
+                            Comunicação e
+                            Arte.
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/rafael.jpg" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Rafael Soares</h3>
+                        <span>Roteirista e Produtor</span>
+                        <p>Produtor, diretor, roteirista e editor. Graduado em
+                            Cinema e
+                            Vídeo pela Unespar.
+                        </p>
+                    </div>
+                    <div class="team_member">
+                        <div class="member_img">
+                            <img src="images/default.png" alt="our_team"
+                                class='logo'>
+                        </div>
+                        <h3>Kelly Roncato</h3>
+                        <span>Roteirista</span>
+                        <p>Roteirista e diretora de Audiovisual. Graduada em
+                            Jornalismo pela
+                            UTP, Técnica em Cinema pelo Centro Europeu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
 
 </html>
